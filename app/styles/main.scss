@@ -2,8 +2,10 @@ $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-// endbower
+@import "variables";
+@import "navbar";
 
+// endbower
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -44,7 +46,6 @@ body {
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
-
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -53,9 +54,10 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  background: $white;
   .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+    padding: 5px;
+    font-size: 16px;
   }
 }
 
@@ -65,6 +67,27 @@ body {
   p + h4 {
     margin-top: 28px;
   }
+}
+.post {
+  min-height: 400px;
+    margin: 1em 0;
+
+  h2 {
+      padding: 1em 0;
+  }
+
+  h2, p {
+      max-width: 650px;
+      margin: 0 auto;
+  }
+}
+.covers {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* Responsive: Portrait tablets and up */
