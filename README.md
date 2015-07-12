@@ -7,8 +7,8 @@
 
 
 ### Overview 
--Full story is a flask application. 
--If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
+Full story is a flask application. 
+If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
 
 ####Human-centered design 
 Pam is a 20-year-old college student in D.C.
