@@ -5,7 +5,7 @@
 3. Scenario 
 4. Future work
 
-![alt tag](http://i.imgur.com/jJFY6XU.png)
+![alt tag](http://i.imgur.com/eAaOoKS.jpg)
 
 ### Overview 
 If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
