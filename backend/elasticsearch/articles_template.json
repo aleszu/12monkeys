@@ -1,0 +1,72 @@
+{
+    "template": "articles*",
+    "order": 1,
+    "settings": {
+        "number_of_shards": 1,
+        "analysis": {
+            "filter": {
+                "my_shingle": {
+                    "type": "shingle",
+                    "min_shingle_size": 2,
+                    "max_shingle_size": 3,
+                    "output_unigrams": true
+                },
+                "remove_last_stop_words": {
+                    "type": "pattern_replace",
+                    "pattern": " _",
+                    "replacement": ""
+                },
+                "remove_first_stop_words": {
+                    "type": "pattern_replace",
+                    "pattern": "_ ",
+                    "replacement": ""
+                }
+            },
+            "analyzer": {
+                "ngram": {
+                    "type": "custom",
+                    "tokenizer": "uax_url_email",
+                    "filter": ["lowercase", "stop", "my_shingle", "remove_last_stop_words", "remove_first_stop_words"]
+                },
+                "rawl": {
+                    "type": "custom",
+                    "tokenizer": "keyword",
+                    "filter": ["lowercase"]
+                }
+            }
+        }
+    },
+    "mappings": {
+        "article": {
+            "_all": {
+                "enabled": false
+            },
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "paragraphs": {
+                    "type": "string",
+                    "fields": {
+                        "ngram": {
+                            "type": "string",
+                            "index": "analyzed",
+                            "analyzer": "ngram"
+                        }
+                    }
+                },
+                "description": {
+                    "type": "string"
+                },
+                "img_src": {
+                    "type": "string"
+                },
+                "session": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                }
+            }
+        }
+    }
+}
