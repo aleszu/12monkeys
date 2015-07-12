@@ -3,11 +3,15 @@ from goose import Goose
 from pattern.vector import Document, Model, TFIDF
 import json
 import tweepy
+from flask.ext.cors import CORS
+from bs4 import BeautifulSoup
+import requests
+import do_auth
 
-CONSUMER_KEY = "ocNRflyhjUplQuXf2tpCqG3wC"
-CONSUMER_SECRET = "EpO77uPxOeGV5lEcz03AwkBGxv2A96mXSd6u2wSGJeGSKZDGeX"
-ACCESS_TOKEN = "414399521-6Yt1XWIpO93CZAp9VSKsHZ3KYGeyAgPnU5gLWx7x"
-ACCESS_TOKEN_SECRET = "PpzgWH064izjCAZchk42Bty3e3pKiSfGODZK6B7bQxqZY"
+CONSUMER_KEY = do_auth.c_k
+CONSUMER_SECRET = do_auth.c_s
+ACCESS_TOKEN = do_auth.a_k
+ACCESS_TOKEN_SECRET = do_auth.a_s
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
@@ -15,6 +19,7 @@ api = tweepy.API(auth)
 g = Goose()
 
 app = Flask(__name__)
+cors = CORS(app)
 
 @app.route("/")
 def hello():
@@ -39,13 +44,15 @@ def compare(origin_article_obj, tgt_article_objs):
 	tgt_grafs = []
 
 	for obj in tgt_article_objs:
-		for graf in obj['paragraphs']:
-			tgt_grafs.append({
-				'text': graf,
-				'url': obj['url'],
-				'img': obj['img_src']
-			})
-			tgt_paragraph_docs.append(Document(graf, description=obj['url']))
+		if obj['paragraphs'] is not None:
+			for graf in obj['paragraphs']:
+				tgt_grafs.append({
+					'text': graf,
+					'url': obj['url'],
+					'img': obj['img_src'],
+					'title': obj['title']
+				})
+				tgt_paragraph_docs.append(Document(graf, description=obj['url']))
 
 	origin_graf_doc = Document(' '.join(origin_article_obj['paragraphs']), description='origin')
 
@@ -53,9 +60,19 @@ def compare(origin_article_obj, tgt_article_objs):
 
 	tgts_by_dist = sorted(range(len(tgt_paragraph_docs)), key=lambda i: m.similarity(origin_graf_doc, tgt_paragraph_docs[i]))
 
-	furthest = map(lambda i: tgt_grafs[i], tgts_by_dist[-10:])
+	furthest = map(lambda i: tgt_grafs[i], tgts_by_dist)
 
-	return furthest
+	furthest_unique = []
+	for entry in furthest[::-1]:
+		if any([obj['url'] == entry['url'] or obj['text'] == entry['text'] for obj in furthest_unique]):
+			pass
+		else:
+			furthest_unique.append(entry)
+
+	if len(furthest_unique) >= 10:
+		return furthest_unique[:10]
+	else:
+		return furthest_unique
 
 
 def get_keywords(url):
@@ -67,6 +84,12 @@ def get_keywords(url):
 		pass
 	try:
 		art_text = art.cleaned_text
+
+		if not art_text:
+			r = requests.get(url)
+			soup = BeautifulSoup(r.text, 'lxml')
+			art_text = ''.join([p.string for p in soup.find_all('p') if p.string is not None])
+
 		output['paragraphs'] = filter(lambda x: x, art_text.split('\n'))
 	except:
 		output['paragraphs'] = None
@@ -87,9 +110,16 @@ def get_keywords(url):
 
 
 def get_articles(query_term_list):
-	max_tweets = 100
+	max_tweets = 300
 
-	searched_tweet_urls = [status.entities['urls'] for status in tweepy.Cursor(api.search, q=query_term_list, include_entities=True).items(max_tweets)]
+	searched_tweets = [status for status in tweepy.Cursor(api.search, q=query_term_list).items(max_tweets)]
+
+	searched_tweet_urls = []
+	for tweet in searched_tweets:
+		try:
+			searched_tweet_urls.append(tweet.entities['urls'])
+		except:
+			pass
 
 	tgt_urls = []
 	for urls in searched_tweet_urls:
@@ -120,10 +150,14 @@ def get_articles(query_term_list):
 			articles[i]['description'] = art.meta_description
 		except:
 			articles[i]['description'] = None
+		try:
+			articles[i]['title'] = art.title
+		except:
+			articles[i]['title'] = None
 
 	return articles
 
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

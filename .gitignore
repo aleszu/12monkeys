@@ -3,3 +3,5 @@ node_modules
 .sass-cache
 bower_components
 test/bower_components
+do_auth.py
+uf_auth.py
