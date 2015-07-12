@@ -3,13 +3,12 @@
 
 ### If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
 
-##Human-centered design 
+####Human-centered design 
 
 Pam is a 20-year-old college student in D.C.
 She consumes news as it comes to her, has no allegiance to any particular news outlets, and feels she's rarely getting the full story. 
-As a biology major, she can't contextualize the Charleston confederate flag debate. 
-How does she do it?
-
+Test scenario: Her friends are all talking about Charleston confederate flag but she can't add much to the conversation. Does she sit in silence?
+She goes to Facebook, starts reading the first Confederate flag article she finds, but she doesn't understand it. Does she have to go read other articles? She doesn't have the time. How does she do it?
 
 ### list of possible 1st articles
 
