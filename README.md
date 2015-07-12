@@ -1,4 +1,9 @@
-## list of possible 1st articles
+
+###Hacking Journalism, July 11-12, 2015
+
+### If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
+
+### list of possible 1st articles
 
 http://www.usatoday.com/story/news/nation/2015/07/10/south-carolina-confederate-flag/29952953/
 
@@ -11,3 +16,5 @@ http://www.motherjones.com/mojo/2015/07/south-carolina-lowers-confederate-flag-o
 http://www.nydailynews.com/news/national/confederate-flag-fans-critics-gather-s-statehouse-article-1.2287700
 
 ##related image files are in named folders
+
+
