@@ -8,7 +8,7 @@
 4. Future work
 
 ### Overview 
-If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
+If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas, extracting paragraphs that contain those differences.
 
 ####Backend Specs
 Full story is a [Flask application] (http://flask.pocoo.org/docs/0.10/quickstart/) using [Goose extraction] (https://pypi.python.org/pypi/goose-extractor/)  to identify keywords in an (original) article and through [Twitter's API] (https://dev.twitter.com/overview/documentation), identify articles on the same topic. Using the Python Pattern library to compute inverse cosine similarity of paragraphs to the original document, it extracts paragraphs from articles that are the most different from the original article.
@@ -19,7 +19,7 @@ She consumes news as it comes to her, has no allegiance to any particular news o
 Test scenario: Her friends are all talking about Charleston confederate flag but she can't add much to the conversation. Does she sit in silence?
 When she goes back to her dorm, she goes to Facebook and starts reading the first Confederate flag article she finds, but she doesn't understand it. 
 Does she have to go read other articles? She doesn't have the time. 
-How does she do it? Full Story.
+How does she do it? She can go to Full Story.
 
 #### How this helps journalists
 - Full Story can show journalists what they're missing or how the issue has grown over time.
