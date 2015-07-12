@@ -47,6 +47,10 @@ body {
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
+
+.love {
+    color: red;
+}
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -56,6 +60,13 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   background: $white;
+  margin-bottom: 1em;
+
+  img {
+      max-width: 600px;
+      width: 100%;
+      margin: 15px 15px 30px 15px;
+  }
   .btn {
     padding: 5px;
     font-size: 16px;
