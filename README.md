@@ -46,7 +46,7 @@ http://www.nydailynews.com/news/national/confederate-flag-fans-critics-gather-s-
 
 ####Team: 
 Aleszu Bajak, Amelia Winger-Bearskin, Erik Reyna, Igor Motov, Maria Chiu, Ralph Wilson, Ross Goodwin, Sandhya Kambhampati 
-Hard at work [https://t.co/DDb2gmpLr2]
+Hard at work [https://vine.co/v/evpTAnhH5Bq]
 
 
 
