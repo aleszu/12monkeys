@@ -5,10 +5,11 @@
 3. Scenario 
 4. Future work
 
-
 ### Overview 
 Full story is a flask application. 
 If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
+
+
 
 ####Human-centered design 
 Pam is a 20-year-old college student in D.C.
@@ -21,15 +22,15 @@ How does she do it?
 ####Full Story
 - a website that TKTKT that reveals stories from other outlets reporting information that's most different from the initial link.
 
+#### How this helps journalists
+- Full Story can show journalists what they're missing or how the issue has grown
+
 #### Future work
 - Chrome plugin
 - Perhaps help contextualize corporate funding sources, flagging sponsored content
 
 #### Challenges
 - What is a news outlet and what is not? Highly contentious issues would return a lot of op-eds and tendentious viewpoints. 
-
-#### How this helps journalists
-- Full Story can show journalists what they're missing or how the issue has grown
 
 #### List of possible 1st articles
 
