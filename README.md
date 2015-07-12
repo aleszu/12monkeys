@@ -44,3 +44,6 @@ http://www.motherjones.com/mojo/2015/07/south-carolina-lowers-confederate-flag-o
 
 http://www.nydailynews.com/news/national/confederate-flag-fans-critics-gather-s-statehouse-article-1.2287700
 
+####Backend Specs
+
+Full story is a Flask application using Goose extraction to identify keywords in an (original) article and through twitter's API, identify articles on the same topic. Using the Python Pattern library to compute inverse cosine similarity of paragraphs to the original document, it extracts paragraphs from articles that are the most different from the original article.
