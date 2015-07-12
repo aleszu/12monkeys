@@ -15,6 +15,3 @@ http://www.motherjones.com/mojo/2015/07/south-carolina-lowers-confederate-flag-o
 
 http://www.nydailynews.com/news/national/confederate-flag-fans-critics-gather-s-statehouse-article-1.2287700
 
-##related image files are in named folders
-
-
