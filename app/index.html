@@ -80,12 +80,13 @@
 
   <script id="post" type="text/x-handlebars-template">
     {{#each this}}
-    <div class="post covers">
+    <div class="post">
       <div class="img-contain">
             <img class="img-responsive" src="{{ img }}" alt="" />
       </div><div class="content">
         <h2>{{ title }}</h2>
         <p>{{ text }}</p>
+        <span class="source">{{ url }}</span>
       </div>
     </div>
     {{/each}}

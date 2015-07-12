@@ -47,9 +47,8 @@ body {
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
-
 .love {
-    color: red;
+  color: red;
 }
 .container-narrow > hr {
   margin: 30px 0;
@@ -58,14 +57,12 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
   background: $white;
   margin-bottom: 1em;
-
   img {
-      max-width: 600px;
-      width: 100%;
-      margin: 15px 15px 30px 15px;
+    max-width: 600px;
+    width: 100%;
+    margin: 15px 15px 30px;
   }
   .btn {
     padding: 5px;
@@ -81,37 +78,56 @@ body {
   }
 }
 .post {
-  margin: 1em 0;
+  padding: 1em 0;
+  border-bottom: 1px solid #e5e5e5;
+
+  &:last-child {
+      border:0;
+  }
   .img-contain,
   .content {
     display: inline-block;
     vertical-align: top;
   }
+  img {
+    width: 100%;
+  }
   .img-contain {
-    width: 30%;
+    width: 100%;
   }
   .content {
-    width: 70%;
+    width: 100%;
+  }
+  h2 {
+    margin-bottom: 25px;
   }
   h2,
   p {
     max-width: 650px;
-    margin: 0 10px;
   }
-}
-.covers {
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 730px;
+  }
+  .post {
+    .img-contain {
+      width: 30%;
+    }
+    .content {
+      width: 70%;
+    }
+
+    h2,
+    p {
+      margin: 0 15px;
+    }
+
+    h2 {
+        margin-bottom: 25px;
+    }
   }
 
   /* Remove the padding we set earlier */
