@@ -1,11 +1,11 @@
+![alt tag](http://i.imgur.com/eAaOoKS.jpg)
+
 ### Hacking Journalism, July 11-12, 2015
 
 1. Overview
 2. How it works 
 3. Scenario 
 4. Future work
-
-![alt tag](http://i.imgur.com/eAaOoKS.jpg)
 
 ### Overview 
 If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
