@@ -13,7 +13,7 @@ If you are reading one story, this application will help you find stories that a
 ##[Promo](https://vine.co/v/evpluUIQwBK)
 
 ####Backend and Frontend Specs
-Full story is a [Flask application] (http://flask.pocoo.org/docs/0.10/quickstart/) using [Goose extraction] (https://pypi.python.org/pypi/goose-extractor/)  to identify keywords in an (original) article and through [Twitter's API] (https://dev.twitter.com/overview/documentation), identify articles on the same topic. Using the Python Pattern library to compute inverse cosine similarity of paragraphs to the original document, it extracts paragraphs from articles that are the most different from the original article.
+Full story is a [Flask application] (http://flask.pocoo.org/docs/0.10/quickstart/) using [Goose extraction] (https://pypi.python.org/pypi/goose-extractor/)  to extract the full text of articles, the [Pattern library](http://www.clips.ua.ac.be/pattern) to identify keywords in an (original) article and, through [Twitter's API] (https://dev.twitter.com/overview/documentation), identify articles on the same topic. Using the Pattern library to compute inverse cosine similarity of paragraphs to the original document, it extracts paragraphs from articles that are the most different from the original article.
 
 ###Live demo
 
@@ -52,7 +52,7 @@ http://www.motherjones.com/mojo/2015/07/south-carolina-lowers-confederate-flag-o
 http://www.nydailynews.com/news/national/confederate-flag-fans-critics-gather-s-statehouse-article-1.2287700
 
 
-####Team: 
+####Team
 Aleszu Bajak, Amelia Winger-Bearskin, Erik Reyna, Igor Motov, Maria Chiu, Ralph Wilson, Ross Goodwin, Sandhya Kambhampati 
 Hard at work [https://vine.co/v/evpTAnhH5Bq]
 
