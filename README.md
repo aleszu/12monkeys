@@ -1,4 +1,4 @@
-![alt tag](http://i.imgur.com/eAaOoKS.jpg)
+![alt tag](http://i.imgur.com/RvfXiP6.jpg)
 
 ### Hacking Journalism, July 11-12, 2015
 
