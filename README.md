@@ -12,8 +12,11 @@ If you are reading one story, this application will help you find stories that a
 
 ##[Promo](https://vine.co/v/evpluUIQwBK)
 
-####Backend and Frontend Specs
-Full story is a [Flask application] (http://flask.pocoo.org/docs/0.10/quickstart/) using [Goose extraction] (https://pypi.python.org/pypi/goose-extractor/)  to extract the full text of articles, the [Pattern library](http://www.clips.ua.ac.be/pattern) to identify keywords in an (original) article and, through [Twitter's API] (https://dev.twitter.com/overview/documentation), identify articles on the same topic. Using the Pattern library to compute inverse cosine similarity of paragraphs to the original document, it extracts paragraphs from articles that are the most different from the original article.
+####Backend Specs
+Full story is a [Flask application] (http://flask.pocoo.org/docs/0.10/quickstart/) using [Goose extraction] (https://pypi.python.org/pypi/goose-extractor/)  to extract the full text of articles, the [Pattern library](http://www.clips.ua.ac.be/pattern) to identify keywords in an (original) article and, through [Twitter's API] (https://dev.twitter.com/overview/documentation), identify articles on the same topic. Using the Pattern library to compute inverse cosine similarity of paragraphs to the original document, it extracts paragraphs from articles that are the most different from the original article. 
+
+####Frontend Specs
+Hooked up a form to API and used Twitter Bootstrap to create UI. 
 
 ###Live demo
 
