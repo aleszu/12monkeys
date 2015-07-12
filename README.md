@@ -1,5 +1,12 @@
 ### Hacking Journalism, July 11-12, 2015
 
+1. The application
+2. How it works 
+3. Scenario 
+4. Future work
+
+###Full story is a flask application using a Goose library. 
+
 ####If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
 
 
@@ -12,18 +19,18 @@ When she goes back to her dorm, she goes to Facebook and starts reading the firs
 Does she have to go read other articles? She doesn't have the time. 
 How does she do it?
 
-Full Story
+####Full Story
 - a website that TKTKT that reveals stories from other outlets reporting information that's most different from the initial link.
 
 #### Future work
 - Chrome plugin
 - Perhaps help contextualize corporate funding sources, flagging sponsored content
 
-#### How this helps journalists
-- Full Story can show journalists what they're missing or how the issue has grown
-
 #### Challenges
 - What is a news outlet and what is not? Highly contentious issues would return a lot of op-eds and tendentious viewpoints. 
+
+#### How this helps journalists
+- Full Story can show journalists what they're missing or how the issue has grown
 
 #### List of possible 1st articles
 
