@@ -13,15 +13,14 @@ She goes to Facebook, starts reading the first Confederate flag article she find
 Full Story
 - a website that TKTKT that reveals stories from other outlets reporting information that's most different from the initial link.
 
-Future work
+####Future work
 - Chrome plugin
 - Perhaps help contextualize corporate funding sources, flagging sponsored content
 
-How this helps journalists
+####How this helps journalists
 - Full Story can show journalists what they're missing or how the issue has grown
-- 
 
-Challenges
+####Challenges
 - What is a news outlet and what is not? Highly contentious issues would return a lot of op-eds and tendentious viewpoints. 
 
 ### list of possible 1st articles
