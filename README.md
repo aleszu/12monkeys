@@ -20,7 +20,7 @@ Does she have to go read other articles? She doesn't have the time.
 How does she do it? Full Story.
 
 #### How this helps journalists
-- Full Story can show journalists what they're missing or how the issue has grown
+- Full Story can show journalists what they're missing or how the issue has grown over time.
 
 #### Future work
 - Chrome plugin
