@@ -2,6 +2,10 @@ $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "_variables.scss";
+@import "_bootswatch.scss";
+@import "_navbar.scss";
+
 // endbower
 .browserupgrade {
   margin: 0.2em 0;
@@ -66,16 +70,22 @@ body {
   }
 }
 .post {
-  min-height: 400px;
-    margin: 1em 0;
-
-  h2 {
-      padding: 1em 0;
+  margin: 1em 0;
+  .img-contain,
+  .content {
+    display: inline-block;
+    vertical-align: top;
   }
-
-  h2, p {
-      max-width: 650px;
-      margin: 0 auto;
+  .img-contain {
+    width: 30%;
+  }
+  .content {
+    width: 70%;
+  }
+  h2,
+  p {
+    max-width: 650px;
+    margin: 0 10px;
   }
 }
 .covers {
