@@ -1,16 +1,16 @@
 ### Hacking Journalism, July 11-12, 2015
 
-1. The application
+1. Overview
 2. How it works 
 3. Scenario 
 4. Future work
 
-###Full story is a flask application. 
+
+### Overview 
+-Full story is a flask application. 
 -If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
 
-
 ####Human-centered design 
-
 Pam is a 20-year-old college student in D.C.
 She consumes news as it comes to her, has no allegiance to any particular news outlets, and feels she's rarely getting the full story. 
 Test scenario: Her friends are all talking about Charleston confederate flag but she can't add much to the conversation. Does she sit in silence?
