@@ -3,6 +3,14 @@
 
 ### If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
 
+##Human-centered design 
+
+Pam is a 20-year-old college student in D.C.
+She consumes news as it comes to her, has no allegiance to any particular news outlets, and feels she's rarely getting the full story. 
+As a biology major, she can't contextualize the Charleston confederate flag debate. 
+How does she do it?
+
+
 ### list of possible 1st articles
 
 http://www.usatoday.com/story/news/nation/2015/07/10/south-carolina-confederate-flag/29952953/
