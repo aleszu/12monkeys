@@ -80,9 +80,8 @@ body {
 .post {
   padding: 1em 0;
   border-bottom: 1px solid #e5e5e5;
-
   &:last-child {
-      border:0;
+    border: 0;
   }
   .img-contain,
   .content {
@@ -119,14 +118,18 @@ body {
     .content {
       width: 70%;
     }
-
     h2,
     p {
       margin: 0 15px;
     }
-
     h2 {
-        margin-bottom: 25px;
+      margin-bottom: 25px;
+    }
+    .source {
+      display: block;
+      float: right;
+      max-width: 650px;
+      margin: 0 15px;
     }
   }
 

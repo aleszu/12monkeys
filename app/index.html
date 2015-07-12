@@ -37,7 +37,9 @@
           <div class="form-group">
             <input type="text" class="form-control" id="url" name="url" placeholder="Enter url">
           </div>
-          <button type="submit" class="btn btn-default">Complete me <span class="glyphicon glyphicon-heart love"></button>
+          <button type="submit" class="btn btn-default">Complete me
+            <span class="glyphicon glyphicon-heart love">
+          </button>
         </form>
       </div>
     </div>
@@ -82,11 +84,13 @@
     {{#each this}}
     <div class="post">
       <div class="img-contain">
-            <img class="img-responsive" src="{{ img }}" alt="" />
+        <a href="{{ url }}">
+          <img class="img-responsive" src="{{ img }}" alt="" />
+        </a>
       </div><div class="content">
-        <h2>{{ title }}</h2>
-        <p>{{ text }}</p>
-        <span class="source">{{ url }}</span>
+        <h2><a href="{{url}}">{{ title }}</a></h2>
+        <p><a href="{{url}}">{{ text }}</a></p>
+        <span class="source"><a href="{{url}}">{{ url }}</a></span>
       </div>
     </div>
     {{/each}}

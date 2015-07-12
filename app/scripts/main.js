@@ -1,23 +1,21 @@
-$(document).ready(function(e) {
+$(document).ready(function() {
+    'use strict';
 
-  var source = $("#post").html();
+  var source = $('#post').html();
   var template = Handlebars.compile(source);
   var placeholder = $('#results');
   // this is the id of the form
-  $("#idForm").submit(function(event) {
+  $('#idForm').submit(function(event) {
     event.preventDefault();
 
-    var url = "http://45.55.253.92/post";
+    var url = 'http://45.55.253.92/post';
 
     $.ajax({
-        type: "POST",
+        type: 'POST',
         url: url,
-        data: $("#idForm").serialize(),
+        data: $('#idForm').serialize()
       }).done(function(response) {
-        console.log(response)
-        data = JSON.parse(response);
-        console.log(data);
-
+        var data = JSON.parse(response);
         placeholder.html(template(data));
 
         $('img').each(function() {
@@ -26,7 +24,7 @@ $(document).ready(function(e) {
 
           img.onerror = function() {
             $(self).prop('src', 'images/full_story.jpg');
-          }
+        };
 
           img.src = this.src;
         });
@@ -34,10 +32,10 @@ $(document).ready(function(e) {
 
       }).fail(function(e) {
         console.log(e);
-        console.log("fail");
+        console.log('fail');
       })
       .always(function() {
-        console.log("always");
+        console.log('always');
       });
 
     return false;
