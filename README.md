@@ -12,8 +12,14 @@ If you are reading one story, this application will help you find stories that a
 
 ##[Promo](https://vine.co/v/evpluUIQwBK)
 
-####Backend Specs
+####Backend and Frontend Specs
 Full story is a [Flask application] (http://flask.pocoo.org/docs/0.10/quickstart/) using [Goose extraction] (https://pypi.python.org/pypi/goose-extractor/)  to identify keywords in an (original) article and through [Twitter's API] (https://dev.twitter.com/overview/documentation), identify articles on the same topic. Using the Python Pattern library to compute inverse cosine similarity of paragraphs to the original document, it extracts paragraphs from articles that are the most different from the original article.
+
+###Live demo
+
+Paste a link into [Full-story.org](http://full-story.org).
+
+![logo](http://i.imgur.com/Xmg1c48.png)
 
 ####Human-centered design 
 Pam is a 20-year-old college student in D.C.
