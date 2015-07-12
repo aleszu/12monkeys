@@ -6,10 +6,10 @@
 4. Future work
 
 ### Overview 
-Full story is a flask application. 
 If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
 
-
+####Backend Specs
+Full story is a Flask application using Goose extraction to identify keywords in an (original) article and through twitter's API, identify articles on the same topic. Using the Python Pattern library to compute inverse cosine similarity of paragraphs to the original document, it extracts paragraphs from articles that are the most different from the original article.
 
 ####Human-centered design 
 Pam is a 20-year-old college student in D.C.
@@ -43,7 +43,3 @@ http://www.washingtonpost.com/news/post-nation/wp/2015/07/10/watch-live-as-the-c
 http://www.motherjones.com/mojo/2015/07/south-carolina-lowers-confederate-flag-once-and-all
 
 http://www.nydailynews.com/news/national/confederate-flag-fans-critics-gather-s-statehouse-article-1.2287700
-
-####Backend Specs
-
-Full story is a Flask application using Goose extraction to identify keywords in an (original) article and through twitter's API, identify articles on the same topic. Using the Python Pattern library to compute inverse cosine similarity of paragraphs to the original document, it extracts paragraphs from articles that are the most different from the original article.
