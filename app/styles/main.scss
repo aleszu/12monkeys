@@ -61,7 +61,7 @@ body {
   margin-bottom: 1em;
   img {
     max-width: 600px;
-    width: 100%;
+    width: 90%;
     margin: 15px 15px 30px;
   }
   .btn {
@@ -110,6 +110,11 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 730px;
+  }
+  .jumbotron {
+      img {
+          width: 100%;
+      }
   }
   .post {
     .img-contain {
