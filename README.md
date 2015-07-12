@@ -19,7 +19,7 @@ She consumes news as it comes to her, has no allegiance to any particular news o
 Test scenario: Her friends are all talking about Charleston confederate flag but she can't add much to the conversation. Does she sit in silence?
 When she goes back to her dorm, she goes to Facebook and starts reading the first Confederate flag article she finds, but she doesn't understand it. 
 Does she have to go read other articles? She doesn't have the time. 
-How does she do it? Full Story.
+How does she do it? She can go to Full Story.
 
 #### How this helps journalists
 - Full Story can show journalists what they're missing or how the issue has grown over time.
