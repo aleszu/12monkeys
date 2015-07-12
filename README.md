@@ -40,3 +40,14 @@ http://www.washingtonpost.com/news/post-nation/wp/2015/07/10/watch-live-as-the-c
 http://www.motherjones.com/mojo/2015/07/south-carolina-lowers-confederate-flag-once-and-all
 
 http://www.nydailynews.com/news/national/confederate-flag-fans-critics-gather-s-statehouse-article-1.2287700
+
+
+####Team 12 Monkeys: 
+Aleszu Bajak, Amelia Winger-Bearskin, Erik Reyna, Igor Motor, Maria Chiu, Ralph Wilson,Ross Goodwin, Sandhya Kambhampati 
+
+
+
+
+
+
+
