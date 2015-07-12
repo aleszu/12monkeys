@@ -5,9 +5,8 @@
 3. Scenario 
 4. Future work
 
-###Full story is a flask application using a Goose library. 
-
-####If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
+###Full story is a flask application. 
+-If you are reading one story, this application will help you find stories that are on similar topics, but with dissimilar ideas.
 
 
 ####Human-centered design 
